@@ -1,0 +1,194 @@
+.admin-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.admin-container .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid black;
+}
+
+.admin-container .navbar a {
+  color: #1b1a1a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.admin-container .navbar a:hover {
+  background-color: rgb(133, 128, 128);
+}
+
+.admin-container .navbar a:active {
+  background-color: grey;
+}
+
+.admin-container .top-side img {
+  height: 40px; 
+}
+
+.admin-container .top-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.admin-container .top-center a {
+  margin: 0 10px;
+}
+
+.admin-container .top-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.admin-container .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.admin-container .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.admin-container .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.admin-container .dropdown:hover .dropbtn {
+  background-color: rgb(133, 128, 128);
+}
+
+.admin-container .main-content {
+  text-align: center;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.admin-container h2 {
+  font-size: 40px;
+}
+
+.admin-container p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.admin-container button {
+  width: 150px;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 10px;
+}
+
+.admin-container button:hover {
+  transform: translateY(-5px);
+}
+
+.admin-container .hire {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.admin-container .job {
+  background-color: rgb(34, 32, 32);
+  border: 2px solid black;
+  color: white;
+}
+
+.admin-container .bottom-content {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+
+@media (max-width: 768px) {
+  .admin-container .navbar a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .admin-container .main-content {
+    margin-top: 15px;
+  }
+
+  .admin-container h2 {
+    font-size: 30px;
+  }
+
+  .admin-container p {
+    font-size: 16px;
+  }
+
+  .admin-container button {
+    width: 130px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-container .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-container .top-center,
+  .admin-container .top-end {
+    justify-content: flex-start;
+  }
+
+  .admin-container .main-content {
+    margin-top: 10px;
+  }
+
+  .admin-container h2 {
+    font-size: 24px;
+  }
+
+  .admin-container p {
+    font-size: 14px;
+  }
+
+  .admin-container button {
+    width: 100px;
+    padding: 8px;
+    font-size: 12px;
+  }
+}

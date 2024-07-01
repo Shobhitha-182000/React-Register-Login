@@ -1,0 +1,141 @@
+body.register-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6a11cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.register-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.register-container:hover {
+  transform: scale(1.02);
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.register-container form div {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.register-container label {
+  display: flex;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-container input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+  outline: none;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.register-container button:hover {
+  background-color: #0db746;
+  transform: translateY(-2px);
+}
+
+.register-container button:active {
+  background-color: #4a0da7;
+  transform: translateY(0);
+}
+
+.register-container #userIcon,
+.register-container #emailIcon {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  color: #6a11cb;
+}
+
+/* Media Queries */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  .register-container h2 {
+    font-size: 22px;
+  }
+
+  .register-container input {
+    padding: 11px;
+  }
+
+  .register-container button {
+    padding: 11px;
+    font-size: 15px;
+  }
+
+  .register-container #userIcon,
+  .register-container #emailIcon {
+    top: 50px;
+  }
+}
+
+/* Mobile and below */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .register-container h2 {
+    font-size: 20px;
+  }
+
+  .register-container input {
+    padding: 10px;
+  }
+
+  .register-container button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .register-container #userIcon,
+  .register-container #emailIcon {
+    top: 45px;
+  }
+}

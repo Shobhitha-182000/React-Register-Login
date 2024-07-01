@@ -1,0 +1,91 @@
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.resume form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.resume h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.resume label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.resume input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+}
+
+.resume input[type="file"].error {
+  border-color: red;
+}
+
+.resume button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume button:hover {
+  background-color: #0056b3;
+}
+
+ 
+@media (max-width: 768px) {
+  .resume form {
+    padding: 15px;
+  }
+  
+  .resume h1 {
+    font-size: 20px;
+  }
+  
+  .resume button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume form {
+    padding: 10px;
+  }
+  
+  .resume h1 {
+    font-size: 18px;
+  }
+  
+  .resume button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .resume input[type="file"] {
+    padding: 8px;
+    width: calc(100% - 16px);
+  }
+}

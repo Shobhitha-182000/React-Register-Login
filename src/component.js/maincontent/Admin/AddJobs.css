@@ -1,0 +1,108 @@
+.form-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-left: 300px;
+}
+
+.form-container label {
+  display: flex;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-container button {
+  background-color: green;
+}
+
+.findjobs-maincontent {
+  background-color: grey;
+  margin-left: 100px;
+}
+
+.findjobs-content {
+  float: left;
+  margin-left: 10px;
+  background-color: #e9e3e3;
+  padding: 40px;
+  border: 2px solid rgb(252, 249, 249);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.addjobs-container {
+  text-align: center;
+}
+
+.addjobs-container a {
+  margin-left: 500px;
+}
+
+.addjobs-container a:hover {
+  background-color: #ccc;
+}
+
+ 
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+    margin-left: 50px;
+    max-width: 500px;
+  }
+
+  .findjobs-maincontent {
+    margin-left: 50px;
+  }
+
+  .findjobs-content {
+    margin-left: 5px;
+    padding: 30px;
+    max-width: 250px;
+  }
+
+  .addjobs-container a {
+    margin-left: 250px;
+  }
+}
+
+ 
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 100%;
+  }
+
+  .findjobs-maincontent {
+    margin-left: 20px;
+  }
+
+  .findjobs-content {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .addjobs-container a {
+    margin-left: 100px;
+  }
+}

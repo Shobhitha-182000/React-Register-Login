@@ -1,0 +1,115 @@
+body.main-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;  
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-page .mainpage-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.main-page .mainpage-container:hover {
+  transform: scale(1.02);
+}
+
+.main-page h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.main-page .button-row {
+  display: flex;
+  justify-content: space-around;  
+  margin-top: 20px;  
+}
+
+.main-page .button-row button {
+  width: 150px;  
+  padding: 12px;
+  background-color: #f78f06;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.main-page .button-row button:hover {
+  background-color: #ca0d7b;
+  transform: translateY(-2px);
+}
+
+.main-page .button-row button:active {
+  background-color: #4a0da7;
+  transform: translateY(0);
+}
+button{
+  width: 150px;  
+  padding: 12px;
+  background-color: #f78f06;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+  background-color: #ca0d7b;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #4a0da7;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .main-page .mainpage-container {
+    padding: 20px;
+  }
+
+  .main-page h2 {
+    font-size: 20px;
+  }
+
+  .main-page .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-page .button-row button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-page .mainpage-container {
+    padding: 15px;
+  }
+
+  .main-page h2 {
+    font-size: 18px;
+  }
+
+  .main-page .button-row button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
